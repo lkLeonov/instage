@@ -1,0 +1,30 @@
+body { background: #1d1f20; }
+header,footer {
+  background: #000;
+  height: 15vh;
+  position: fixed;
+  width: 100%;
+}
+header { 
+  text-align: center;
+  border-bottom: 5px solid #ccc;
+}
+footer {
+  border-top: 5px solid #ccc;
+  bottom: 0;
+}
+
+.collage img {
+  object-fit: cover;
+  height: inherit;
+  width: inherit;
+}
+
+
+.collage img {
+	transition: .8s cubic-bezier(.4, .4, 0, 3);
+	cursor: pointer;
+}
+.inner:hover img {
+	transform: scale(0.9);
+}
